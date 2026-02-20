@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Project Manager Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>PM Dashboard</h2>
+    <ul>
+      <li>Dashboard</li>
+      <li>Projects</li>
+      <li>Tasks</li>
+      <li>Team</li>
+      <li>Reports</li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    
+    <!-- Top Bar -->
+    <div class="topbar">
+      <h1>Welcome, Project Manager</h1>
+      <button onclick="addProject()">+ New Project</button>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats">
+      <div class="card">Total Projects<br><span id="totalProjects">3</span></div>
+      <div class="card">Completed<br><span>1</span></div>
+      <div class="card">In Progress<br><span>2</span></div>
+    </div>
+
+    <!-- Projects -->
+    <h2>Projects</h2>
+    <div class="projects" id="projectList">
+
+      <div class="project-card">
+        <h3>Website Redesign</h3>
+        <p>Status: In Progress</p>
+        <div class="progress">
+          <div style="width:70%"></div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Mobile App</h3>
+        <p>Status: Completed</p>
+        <div class="progress">
+          <div style="width:100%"></div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Cloud Migration</h3>
+        <p>Status: In Progress</p>
+        <div class="progress">
+          <div style="width:40%"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
